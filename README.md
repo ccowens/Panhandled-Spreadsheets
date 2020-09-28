@@ -46,15 +46,32 @@ For ease of interaction in a spreadsheet, people will often "join" together a pa
 |         |         | valueC5 | valueD5 |
 |         |         | valueC6 | valueD6 |
 
-### Untangling the Dataset
+## My Motivation
 
-#### Assumptions
+I needed to import into Salesforce the data from a panhandled spreadsheet with company and contact information mixed together. For this, I needed a properly formed database (tidy) structure to import into the Account object and a separate one to import into the Contact object. I looked through the _tidyr_ package, but didn't see anything that would do what I needed done.
+
+## Untangling the Dataset
+
+This is what the script does.
+
+### Files
+
+#### Input
+
+1. `data/original.xlsx`
+
+#### Output
+
+1. `data/parent.csv`
+1. `data/child.csv`
+
+### Assumptions for Input File
 
 - The different "pans" (parent with children) can be separated by blank lines or not.
 - All information except the "pans" has been deleted.
 - The first column contains the keys for the parent and child datasets
 
-#### Process
+### Process
 
 1. Read in the spreadsheet as our original table to work with
 2. In the original table, clear any blank rows used to separate parent/child groupings

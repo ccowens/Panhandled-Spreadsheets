@@ -1,8 +1,13 @@
-if(!require(readxl)) {install.packages("readxl"); library(readxl)}
-if(!require(janitor)) {install.packages("janitor"); library(janitor)}
-if(!require(dplyr)) {install.packages("dplyr"); library(dplyr)}
-if(!require(tidyr)) {install.packages("tidyr"); library(tidyr)}
-if(!require(readr)) {install.packages("readr"); library(readr)}
+if(!require(readxl)) {install.packages("readxl"); library(readxl)} 
+  # read_excel
+if(!require(janitor)) {install.packages("janitor"); library(janitor)} 
+  # remove_empty
+if(!require(dplyr)) {install.packages("dplyr"); library(dplyr)} 
+  # filter, select, bind_cols
+if(!require(tidyr)) {install.packages("tidyr"); library(tidyr)} 
+  # fill
+if(!require(readr)) {install.packages("readr"); library(readr)} 
+  # write_csv
 
 original_df <- read_excel("data/original.xlsx")
 

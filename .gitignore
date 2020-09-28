@@ -37,3 +37,5 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+MOCK_DATA2.xlsx
+MOCK_DATA.xlsx

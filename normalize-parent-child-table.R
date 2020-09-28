@@ -36,8 +36,8 @@ child_start_column <- which(colnames(original_df) == colnames(working_df)[1])
 #use this info to drop the parent columns from the child dataframe
 child_df <- original_df[,-1:-(child_start_column-1)]
 
-#add the column of names from the parent first column saves before
-child_df <- bind_cols(child_df,original_df_col1)
+#add the column of names from the parent first column saved before to the child dataframe
+child_df <- bind_cols(original_df_col1,child_df)
 
 write_csv(child_df,"data/child.csv", na="")
 

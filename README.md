@@ -1,6 +1,8 @@
 # Untangling Panhandled Spreadsheets
 
-For ease of interaction in a spreadsheet, people will often "join" together a parent dataset and a child dataset together in the same tab or sheet in a way that doesn't repeat parent data over and over. For example, let's say you have a parent dataset (e.g., companies) and a child dataset (e.g., contacts at those companies). 
+For ease of interaction in a spreadsheet, people will often "join" together a parent dataset and a child dataset together in the same tab or sheet in a way that doesn't repeat parent data over and over. For example, let's say you have a parent dataset (e.g., companies) and a child dataset (e.g., contacts at those companies).
+
+![](panhandled-data-example.png?raw=true)
 
 ## The Panhandled Dataset
 
